@@ -1,8 +1,24 @@
 aid: novig
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/novig.png
 name: Novig
-description: 'Novig is a company surfaced as a portfolio company of forerunner-ventures, multicoin-capital,
-  pantera-capital and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: 'Novig is a peer-to-peer sports prediction and trading platform marketed as "America''s
+  #1 Sports Trading App," operating as a betting exchange rather than a traditional sportsbook. Users
+  can set their own odds or accept existing lines across two modes: free-to-play with Novig Coins and
+  real-money trading with Novig Cash. The consumer product is delivered as iOS and Android apps and is
+  available in 35+ U.S. states. Backed by Forerunner Ventures, Multicoin Capital, and Pantera Capital.
+  As of this enrichment pass Novig exposes no public API, developer portal, SDKs, or machine-readable
+  discovery surface.'
 url: https://raw.githubusercontent.com/api-evangelist/novig/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +30,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Sports Betting
+- Prediction Markets
+- Trading
+- Consumer App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/novig-domain-security.yml
 - type: Website
   url: https://novig.us
+- type: Support
+  url: https://support.novig.us/en
+- type: TermsOfService
+  url: https://support.novig.us/en/articles/8590101-terms-of-use
+- type: PrivacyPolicy
+  url: https://support.novig.us/en/articles/8288127-privacy-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

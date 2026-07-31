@@ -1,0 +1,17 @@
+generated: '2026-07-20'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: novig.us
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 14 22:51:09 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+domains:
+- domain: novig.us
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: true
+  dmarc_policy: reject
